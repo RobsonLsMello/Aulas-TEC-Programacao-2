@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TP01.Enum;
+using TP01.Exceções;
 
 namespace TP01.BLL
 {
@@ -23,6 +24,13 @@ namespace TP01.BLL
         {
             double somaProdutosResistencias, somaResistencias;
             Resistor[] resistoresConvertidos = new Resistor[3];
+            foreach (var resistor in resistores)
+            {
+                if (resistor.resistencia <= 0) 
+                { 
+                    throw new NegativoException();
+                }
+            }
             if (this.tipoAssociacao == TipoCircuitoResistor.estrela)
             {
                 somaProdutosResistencias = resistores[0].resistencia * resistores[1].resistencia + resistores[1].resistencia * resistores[2].resistencia + resistores[2].resistencia * resistores[0].resistencia;

@@ -47,6 +47,7 @@
     <Compile Include="BLL\ConverterCircuitoResistencia.cs" />
     <Compile Include="BLL\Resistor.cs" />
     <Compile Include="Enum\TipoCircuitoResistor.cs" />
+    <Compile Include="Exceções\NegativoException.cs" />
     <Compile Include="View\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>

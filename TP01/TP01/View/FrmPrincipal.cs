@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TP01.BLL;
 using TP01.Enum;
+using TP01.Exceções;
 
 namespace TP01
 {
@@ -51,6 +52,15 @@ namespace TP01
             catch (FormatException)
             {
                 this.mensagem = "Por favor, digite apenas números";
+                this.cabecalho = "Erro de Formato";
+                this.botoes = MessageBoxButtons.OK;
+                this.icone = MessageBoxIcon.Error;
+                this.botaoPadrao = MessageBoxDefaultButton.Button1;
+                var resultadoDialog = MessageBox.Show(this.mensagem, this.cabecalho, this.botoes, this.icone, this.botaoPadrao);
+            }
+            catch (NegativoException)
+            {
+                this.mensagem = "Número não pode ser zero ou negativo";
                 this.cabecalho = "Erro de Formato";
                 this.botoes = MessageBoxButtons.OK;
                 this.icone = MessageBoxIcon.Error;
