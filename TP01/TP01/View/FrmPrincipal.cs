@@ -99,7 +99,10 @@ namespace TP01
                 this.Dispose();
         }
         #endregion
-
+        #region timer update
+        /*
+         * Verifica se os campos estão preenchidos para deixar o botão converter disponível
+         */
         private void TmrUpdate_Tick(object sender, EventArgs e)
         {
             if (txtR1.Text != "" && txtR2.Text != "" && txtR3.Text != "")
@@ -111,6 +114,7 @@ namespace TP01
                 btnConverter.Enabled = false;
             }
         }
+        #endregion
         #endregion
     }
 }
