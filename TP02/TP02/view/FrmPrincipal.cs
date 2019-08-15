@@ -80,7 +80,7 @@ namespace TP02
                 }
                 try
                 {
-                    lblVelocidadeFinal.Text = String.Format("{0:0000.00000}", corpo.velocidadeFinal(double.Parse(txtTempoDuracao.Text)));
+                    lblVelocidadeFinal.Text = String.Format("{0:0000.00000} m/s", corpo.calcularVelocidadeFinal(double.Parse(txtTempoDuracao.Text)));
                     switch (corpo.classificarTipoMovimento())
                     {
                         case TipoMovimento.movimentoAcelerado:
@@ -98,10 +98,6 @@ namespace TP02
                 {
                     return;
                 }
-            }
-            else
-            {
-
             }
         }
         private void validarTextBoxVisual(TextBox textBoxAlvo, Panel painelAlvo)
@@ -165,7 +161,7 @@ namespace TP02
         }
         #endregion
         #region botoes
-        #region botaoSair
+        #region botao Sair
         private void btnSair_Click(object sender, EventArgs e)
         {
             var resposta = MessageBox.Show("Deseja realmente sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
@@ -175,7 +171,7 @@ namespace TP02
             }
         }
         #endregion
-
+        #region botao Limpar
         private void pcbLimpar_Click(object sender, EventArgs e)
         {
             var resposta = MessageBox.Show("Deseja realmente limpar as caixas de Texto?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
@@ -188,9 +184,19 @@ namespace TP02
                 txtAceleracao.Clear();
                 txtTempoDuracao.Clear();
                 txtVelocidadeInicial.Clear();
+                lblTipoMovimento.Text = "";
+                lblVelocidadeFinal.Text = "";
             }
         }
+        #endregion
 
+        
+        #endregion
+        #region formulario ao carregar
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            txtVelocidadeInicial.Focus();
+        }
         #endregion
     }
 }

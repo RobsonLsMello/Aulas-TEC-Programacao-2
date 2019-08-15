@@ -8,6 +8,8 @@ namespace TP02.model.enums
 {
     enum TipoMovimento
     {
+        #region atributos
         movimentoUniforme = 1, movimentoAcelerado = 2, movimentoRetardado = 3
+        #endregion
     }
 }

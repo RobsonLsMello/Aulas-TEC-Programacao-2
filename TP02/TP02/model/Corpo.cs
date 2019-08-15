@@ -26,6 +26,8 @@ namespace TP02.model
             this.aceleracao = 0;
         }
         #endregion
+        #region metodos
+        #region classificar o tipo de movimento
         public TipoMovimento classificarTipoMovimento()
         {
             if (this.aceleracao == 0)
@@ -41,9 +43,13 @@ namespace TP02.model
                 return TipoMovimento.movimentoRetardado;
             }
         }
-        public double velocidadeFinal(double tempoDuracaoMovimento)
+        #endregion
+        #region calcular velocidade Final
+        public double calcularVelocidadeFinal(double tempoDuracaoMovimento)
         {
             return this.velocidadeInicial + (this.aceleracao * tempoDuracaoMovimento);
         }
+        #endregion
+        #endregion
     }
 }
