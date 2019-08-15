@@ -7,3 +7,12 @@ c:\users\unisanta\documents\visual studio 2013\Projects\TP01\TP01\obj\Debug\TP01
 c:\users\unisanta\documents\visual studio 2013\Projects\TP01\TP01\obj\Debug\TP01.exe
 c:\users\unisanta\documents\visual studio 2013\Projects\TP01\TP01\obj\Debug\TP01.pdb
 c:\users\unisanta\documents\visual studio 2013\Projects\TP01\TP01\obj\Debug\TP01.frmPrincipal.resources
+C:\Users\robso\Documents\GitHub\Aulas-TEC-Programacao-2\TP01\TP01\bin\Debug\TP01.exe.config
+C:\Users\robso\Documents\GitHub\Aulas-TEC-Programacao-2\TP01\TP01\obj\Debug\TP01.exe
+C:\Users\robso\Documents\GitHub\Aulas-TEC-Programacao-2\TP01\TP01\obj\Debug\TP01.pdb
+C:\Users\robso\Documents\GitHub\Aulas-TEC-Programacao-2\TP01\TP01\bin\Debug\TP01.exe
+C:\Users\robso\Documents\GitHub\Aulas-TEC-Programacao-2\TP01\TP01\bin\Debug\TP01.pdb
+C:\Users\robso\Documents\GitHub\Aulas-TEC-Programacao-2\TP01\TP01\obj\Debug\TP01.csprojResolveAssemblyReference.cache
+C:\Users\robso\Documents\GitHub\Aulas-TEC-Programacao-2\TP01\TP01\obj\Debug\TP01.FrmPrincipal.resources
+C:\Users\robso\Documents\GitHub\Aulas-TEC-Programacao-2\TP01\TP01\obj\Debug\TP01.Properties.Resources.resources
+C:\Users\robso\Documents\GitHub\Aulas-TEC-Programacao-2\TP01\TP01\obj\Debug\TP01.csproj.GenerateResource.Cache

@@ -19,7 +19,7 @@ namespace TP01.BLL
             this.resistores = resistores;
             this.tipoAssociacao = tipoCircuito;
         }
-        #region metodo        
+        #region metodo converter 
         public Resistor[] converter()
         {
             double somaProdutosResistencias, somaResistencias;
@@ -40,9 +40,9 @@ namespace TP01.BLL
             else if (this.tipoAssociacao == TipoCircuitoResistor.triangulo)
             {
                 somaResistencias = resistores[0].resistencia +  resistores[1].resistencia +  +  resistores[2].resistencia;
-                resistoresConvertidos[0] = new Resistor((resistores[0].resistencia + resistores[1].resistencia) / (somaResistencias));
-                resistoresConvertidos[1] = new Resistor((resistores[1].resistencia + resistores[2].resistencia) / (somaResistencias));
-                resistoresConvertidos[2] = new Resistor((resistores[0].resistencia + resistores[2].resistencia) / (somaResistencias));
+                resistoresConvertidos[0] = new Resistor((resistores[0].resistencia * resistores[1].resistencia) / (somaResistencias));
+                resistoresConvertidos[1] = new Resistor((resistores[1].resistencia * resistores[2].resistencia) / (somaResistencias));
+                resistoresConvertidos[2] = new Resistor((resistores[0].resistencia * resistores[2].resistencia) / (somaResistencias));
             }
             return resistoresConvertidos;
         }
