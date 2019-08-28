@@ -1,0 +1,9 @@
+c:\users\robso\documents\visual studio 2013\Projects\TP04\TP04\bin\Debug\TP04.exe.config
+c:\users\robso\documents\visual studio 2013\Projects\TP04\TP04\bin\Debug\TP04.exe
+c:\users\robso\documents\visual studio 2013\Projects\TP04\TP04\bin\Debug\TP04.pdb
+c:\users\robso\documents\visual studio 2013\Projects\TP04\TP04\obj\Debug\TP04.csprojResolveAssemblyReference.cache
+c:\users\robso\documents\visual studio 2013\Projects\TP04\TP04\obj\Debug\TP04.frmPrincipal.resources
+c:\users\robso\documents\visual studio 2013\Projects\TP04\TP04\obj\Debug\TP04.Properties.Resources.resources
+c:\users\robso\documents\visual studio 2013\Projects\TP04\TP04\obj\Debug\TP04.csproj.GenerateResource.Cache
+c:\users\robso\documents\visual studio 2013\Projects\TP04\TP04\obj\Debug\TP04.exe
+c:\users\robso\documents\visual studio 2013\Projects\TP04\TP04\obj\Debug\TP04.pdb
